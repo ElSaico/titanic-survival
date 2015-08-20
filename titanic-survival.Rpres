@@ -1,0 +1,42 @@
+<style type="text/css">
+.reveal pre code {
+  font-size: 1em;
+}
+</style>
+titanic-survival
+========================================================
+would you be saved?
+--------------------------------------------------------
+
+What's it?
+========================================================
+
+A machine learning-driven, web-based predictor for whether
+you'd survive the ill-fated *RMS Titanic*'s maiden voyage.
+
+* Change your parameters and have instant feedback
+* Responsive design: works neatly on mobile devices
+* Be a first-class doctor, a second-class reverend, a third-class child; you choose it!
+
+How do you use it?
+========================================================
+
+![](titanic-survival-figure/input.png)
+
+How does it work?
+========================================================
+
+* Machine learning
+* Takes historical data and creates a forest of decision trees around it
+
+```{r echo=FALSE}
+source('titanic.R')
+```
+```{r}
+importance(forest)
+```
+
+Where is it?
+========================================================
+
+https://elsaico.shinyapps.io/titanic-survival
